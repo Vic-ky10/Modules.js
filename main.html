@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <script>
-      function learn() {
+      export default function learn() {
         return "learn a skills daily";
       }
-
       function work() {
         return " work hard for what you learn";
       }
@@ -19,9 +19,8 @@
         return "earn a profit what you learn";
       }
 
-      console.log(learn())
-       console.log(work())
-        console.log(earn())
+      console.log(work());
+      console.log(earn());
     </script>
   </body>
 </html>
